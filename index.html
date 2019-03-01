@@ -7,8 +7,58 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
-    
+    <div class="container">
 
+        <h1>Pig Dice Game!</h1>
+        <div class="well">
+        <form class="Pig-diceForm" action="index.html" method="post">
+          <div class="col-md-3">
+          <div class="form-group">
+            <label for="first-player">First player</label>
+            <input type="text" class="form-control" id="firstPlayername">
+
+          </div>
+          </div>
+          <div class="col-md-6">
+            <p class="p"></p>
+          </div>
+          <div class="col-md-3">
+          <div class="form-group">
+            <label for="second-player">Second player</label>
+            <input type="text" class="form-control" id="secondPlayerName">
+
+          </div>
+          </div>
+        </form>
+        </div>
+        <!-- form 2 -->
+        <form class="game" action="index.html" method="post">
+          <div class="well">
+          <div class="col-md-3">
+            <div class="firstPlayer">
+              <h1>First Player:</h1>
+              <h3>Scores:</h3>
+              <h4>Total Scores:</h4>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+
+          </div>
+          <div class="col-md-3">
+            <div id="secondPlayer">
+              <h2>Second Player:</h2>
+              <h3>Scores:</h3>
+              <h4>Total Scores:</h4>
+            </div>
+
+          </div>
+          </div>
+        </form>
+        <center><button type="click" class="button">Roll Die</button>
+        <center><button type="click" class="button">Hold Die</button>
+
+        </div>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>
