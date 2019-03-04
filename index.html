@@ -8,57 +8,51 @@
   </head>
   <body>
     <div class="container">
-
-        <h1>Pig Dice Game!</h1>
-        <div class="well">
-        <form class="Pig-diceForm" action="index.html" method="post">
-          <div class="col-md-3">
-          <div class="form-group">
-            <label for="first-player">First player</label>
-            <input type="text" class="form-control" id="firstPlayername">
-
-          </div>
-          </div>
-          <div class="col-md-6">
-            <p class="p"></p>
-          </div>
-          <div class="col-md-3">
-          <div class="form-group">
-            <label for="second-player">Second player</label>
-            <input type="text" class="form-control" id="secondPlayerName">
-
-          </div>
-          </div>
-        </form>
-        </div>
-        <!-- form 2 -->
-        <form class="game" action="index.html" method="post">
-          <div class="well">
-          <div class="col-md-3">
-            <div class="firstPlayer">
-              <h1>First Player:</h1>
-              <h3>Scores:</h3>
-              <h4>Total Scores:</h4>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-
-          </div>
-          <div class="col-md-3">
-            <div id="secondPlayer">
-              <h2>Second Player:</h2>
-              <h3>Scores:</h3>
-              <h4>Total Scores:</h4>
-            </div>
-
-          </div>
-          </div>
-        </form>
-        <center><button type="click" class="button">Roll Die</button>
-        <center><button type="click" class="button">Hold Die</button>
+      <h1>Pig Dice Game</h1>
+      <div class="row">
+        <div class="col-md-5">
+          <h2>Rules of the Game</h2>
+          <ul>
+            <li>Roll the die by clicking the roll button</li>
+            <li></li>
+          </ul>
 
         </div>
+        <div class="col-md-4">
+          <h3>Playing section</h3>
+          <div id="playersInfo">
+            <label for="player1">player1</label>
+            <input type="text" class="player1" value="()">
+            <label for="player2">player2</label>
+            <input type="text" class="player2" value="()">
+          </div>
+          <img src="image/rolldice.jpeg" alt="image of a pig dice">
+          <button type="click" class="btn-success">Roll</button>
+          <button type="click" class="btn-success">Hold</button>
+
+        </div>
+        <div class="col-md-3">
+          <ul id="showPlayers">
+
+          </ul>
+          <div id="showPlayersScore">
+
+          </div>
+          <div id="totalScore">
+
+          </div>
+
+          <div class="resetGame">
+            <button type="submit" name="button">Add Player</button>
+            <button type="submit" name="button">Restart ss` Game</button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>

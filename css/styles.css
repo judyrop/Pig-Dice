@@ -4,3 +4,11 @@
 .game {
   margin-top: 15%;
 }
+.image{
+  width: 30px;
+  height: 20px;
+}
+.container{
+  width: 80%;
+  margin:30px auto;
+}
