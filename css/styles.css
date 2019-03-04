@@ -1,19 +1,15 @@
 
 .container{
-  width: 80%;
+  width: 90%;
   margin:30px auto;
   background-color: lightgrey;
 }
 .instructions{
   background-color: violet;
 }
-#firstPlayerInfo{
-  text-decoration-color:blue;
-}
-#secondPlayerInfo{
-  text-decoration-color:blue;
-}
-.image{
-  background-position: center;
+
+.img{
+width:15px;
+height:10px;
 
 }
