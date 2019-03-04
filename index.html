@@ -1,59 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pig Dice</title>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Pig Dice Game</h1>
-      <div class="row">
-        <div class="col-md-5">
-          <h2>Rules of the Game</h2>
-          <ul>
-            <li>Roll the die by clicking the roll button</li>
-            <li></li>
-          </ul>
+<html>
 
+<head>
+  <meta charset="UTF-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Dice Game.</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+
+       <form id="player-1">
+          <div class="form-group">
+            <h3><strong><b><label for="player1Name">Player One:</label></b></strong></h3>
+            <input required class="player1Name form-control" type="text">
+          </div>
+          </form>
+          <form id="player-2">
+            <div class="form-group">
+              <h3><strong><b><label for="player2Name">Player Two:</label></b></strong></h3>
+              <input required class="player2Name form-control" type="text">
+            </div>
+          </form>
+          <button id="start" class="btn-success btn">START</button>
         </div>
-        <div class="col-md-4">
-          <h3>Playing section</h3>
-          <div id="playersInfo">
-            <label for="player1">player1</label>
-            <input type="text" class="player1" value="()">
-            <label for="player2">player2</label>
-            <input type="text" class="player2" value="()">
-          </div>
-          <img src="image/rolldice.jpeg" alt="image of a pig dice">
-          <button type="click" class="btn-success">Roll</button>
-          <button type="click" class="btn-success">Hold</button>
-
-        </div>
-        <div class="col-md-3">
-          <ul id="showPlayers">
-
-          </ul>
-          <div id="showPlayersScore">
-
-          </div>
-          <div id="totalScore">
-
-          </div>
-
-          <div class="resetGame">
-            <button type="submit" name="button">Add Player</button>
-            <button type="submit" name="button">Restart ss` Game</button>
-
-          </div>
-        </div>
-
       </div>
 
 
+
+          <h2><i><em><button id="new-game" class="btn-info btn">NEW-GAME</em></i></button></h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h3><strong><i>Player 1: <span id="player1Name"><span></i></strong></h3>
+              <button id="player1-roll" class="btn-success btn">Roll</button>
+              <button id="player1-hold" class="btn-dark btn">Hold</button>
+              <h4><em><i>Die Roll: <span id="die-roll-1"></span></i></em></h4>
+              <p><i><strong>Turn Total: <span id="turn-total-1"></span></strong></i></p>
+              <p><i><strong>Total Score: <span id="total-score-1"></span></strong></i></p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="hero-text">
+                <h3><strong><i>Player 2: <span id="player2Name"><span></i></strong></h3>
+                <button id="player2-roll" class="btn-success btn">Roll</button>
+                <button id="player2-hold" class="btn-dark btn">Hold</button>
+                <h4><em><i>Die Roll: <span id="die-roll-2"></span></i></em></h4>
+                <p><i><strong>Turn Total: <span id="turn-total-2"></span></strong></i></p>
+                <p><i><strong>Total Score: <span id="total-score-2"></span></strong></i></p>
+              </div>
+            </div>
+          </div>
+
+
     </div>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  </div>
+
+
+</body>
+
 </html>
