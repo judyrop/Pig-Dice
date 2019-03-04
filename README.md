@@ -2,7 +2,7 @@
 #### A simple pig dice game where two players roll die and their scores are recorded and winner declared., 4 March 2019
 #### By **Chepkemoi Judy Rop**
 ## Description
-{This application allow a player roll die giving scores for each turn while making total scores.Player can hold die when they are satisfied by the points.The application returns winner when total points are 100 and above and return turn over when roll to 1 where turn remains to be another player.
+ This application allow a player roll die giving scores for each turn while making total scores.Player can hold die when they are satisfied by the points.The application returns winner when total points are 100 and above and return turn over when roll to 1 where turn remains to be another player.
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
