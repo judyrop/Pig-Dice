@@ -1,16 +1,15 @@
 
-
 //business logic
 var player1 = "";
 var player2 = "";
 
-var throwdice = function() {
+var rolldice = function() {
   return Math.floor(6 * Math.random()) + 1;
 }
 
 function Player(turn) {
   this.roll = 0;
-  this.tempscore = 0;
+  this.playerscore = 0;
   this.totalscore = 0;
   this.turn = turn;
   this.playerName;
@@ -19,32 +18,32 @@ function Player(turn) {
 // checking for 1
 Player.prototype.rollone = function() {
   if (this.roll === 1) {
-    this.tempscore = 0;
-    alert("Sorry " + this.playerName + ", you rolled a 1! Your turn is over!")
+    this.playerscore = 0;
+    alert("Sorry " + this.playerName + ", You rolled a 1! Your turn is over!")
     // this.changeturn();
   } else {
-    this.tempscore += this.roll;
+    this.playerscore += this.roll;
   }
 }
 
 // hold
 Player.prototype.hold = function() {
-  this.totalscore += this.tempscore;
-  this.tempscore = 0;
+  this.totalscore += this.playerscore;
+  this.playerscore = 0;
   // this.changeturn
-  alert(this.playerName + ", your turn is over, pass the mouse!");
+  alert(this.playerName + ", Your turn is over!");
 }
 
 // check for 100
 Player.prototype.winnerCheck = function() {
   if (this.totalscore >= 100) {
-    alert(this.playerName + " Bravo! Bravo! Bravooooo!You are a WINNER!");
+    alert(this.playerName + " You are a Winner!");
   }
 }
 
 Player.prototype.newGame = function() {
   this.roll = 0;
-  this.tempscore = 0;
+  this.playerscore = 0;
   this.totalscore = 0;
   this.playerName = "";
 }
@@ -86,17 +85,17 @@ $(document).ready(function() {
   });
 
   $("button#player1-roll").click(function(event) {
-    player1.roll = throwdice();
+    player1.roll = rolldice();
     $("#die-roll-1").text(player1.roll);
     player1.rollone();
-    $("#turn-total-1").text(player1.tempscore);
+    $("#turn-total-1").text(player1.playerscore);
   });
 
   $("button#player2-roll").click(function(event) {
-    player2.roll = throwdice();
+    player2.roll = rolldice();
     $("#die-roll-2").text(player2.roll);
     player2.rollone();
-    $("#turn-total-2").text(player2.tempscore);
+    $("#turn-total-2").text(player2.playerscore);
   });
 
   $("button#player1-hold").click(function(event) {
