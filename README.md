@@ -21,4 +21,6 @@ There are no known errors now but in case of any bug known feel free to let out 
 HTML, CSS, Bootstrap,jquery, JavaScript,constructors,objects,prototypes.
 ## Support and contact details
 For help or found any issues, reach us on our email judyrop97@gmail.com ,contact 254-722-887-764
+## LICENSE
+[MIT LICENSE](LICENSE)
 Copyright (c) 2019 **Judy Rop**
