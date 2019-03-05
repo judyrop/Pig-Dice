@@ -10,7 +10,7 @@
 * easy-to-understand
 * format
 ### BDD
-| Behaviour                        | Output                                                   |
+| Behaviour of                       | Output                                                   |
 |----------------------------------|----------------------------------------------------------|
 | If die roll 1                    | Your turn is over                                        |
 | If total scores is 100 and above | You are a winner                                         |
