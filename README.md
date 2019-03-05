@@ -10,10 +10,11 @@
 * easy-to-understand
 * format
 ### BDD
-| If die roll 1         | Your turn is over                               |
-|-----------------------|-------------------------------------------------|
-| If total score is 100 | You are a winner                                |
-| If die is hold        | scores are added and turn pushed to next player |
+| Behaviour                        | Output                                                   |
+|----------------------------------|----------------------------------------------------------|
+| If die roll 1                    | Your turn is over                                        |
+| If total scores is 100 and above | You are a winner                                         |
+| If hold die                      | Your scores are added and turn is pushed to other player |
 ## Known Bugs
 There are no known errors now but in case of any bug known feel free to let out for corrections and suggestions you have.
 ## Technologies Used
