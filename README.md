@@ -9,12 +9,15 @@
 * in a simple
 * easy-to-understand
 * format
-
+### BDD
+| If die roll 1         | Your turn is over                               |
+|-----------------------|-------------------------------------------------|
+| If total score is 100 | You are a winner                                |
+| If die is hold        | scores are added and turn pushed to next player |
 ## Known Bugs
 There are no known errors now but in case of any bug known feel free to let out for corrections and suggestions you have.
 ## Technologies Used
 HTML, CSS, Bootstrap,jquery, JavaScript,constructors,objects,prototypes.
 ## Support and contact details
 For help or found any issues, reach us on our email judyrop97@gmail.com ,contact 254-722-887-764
-### License
 Copyright (c) 2019 **Judy Rop**
